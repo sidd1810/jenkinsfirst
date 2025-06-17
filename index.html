@@ -1,42 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nature's Beauty</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #7f5af0;
+      box-shadow: 0 0 0 2px #dcd6f7;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #7f5af0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #624de3;
+    }
+
+    .footer {
+      font-size: 0.875rem;
+      color: #aaa;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
-<body bgcolor="#e6ffe6">
-
-  <center>
-    <h1>Welcome to Nature's Beauty</h1>
-   </center>
-
-  <h2>About Nature</h2>
-  <p>
-    Nature is the most beautiful and attractive surrounding around us which makes us happy and provides us with a natural environment to live healthily.
-  </p>
-
-  <h2>Things You Can Find in Nature</h2>
-  <ul>
-    <li>Trees and Forests</li>
-    <li>Mountains and Rivers</li>
-    <li>Birds and Animals</li>
-    <li>Sunrise and Sunset</li>
-  </ul>
-
-  <h2>Contact Us</h2>
-  <form>
-    <label>Your Name:</label><br>
-    <input type="text" name="name"><br><br>
-
-    <label>Your Favorite Part of Nature:</label><br>
-    <input type="text" name="favorite"><br><br>
-
-    <label>Message:</label><br>
-    <textarea rows="4" cols="40"></textarea><br><br>
-
-    <input type="submit" value="Send">
-  </form>
-
+<body>
+  <div class="card">
+    <h1>Welcome Back</h1>
+    <p>Please login to your account</p>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <div class="footer">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
 </body>
 </html>
-welcome to lw siddhu
+
+
+ 
